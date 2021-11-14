@@ -1,8 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, must_be_immutable, use_key_in_widget_constructors
 
+import 'package:flutter/material.dart';
+
 import 'package:first_app/quiz.dart';
 import 'package:first_app/result.dart';
-import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
 
@@ -48,9 +49,8 @@ class _MyAppState extends State<MyApp> {
   var totalScore = 0;
 
   void answerQuestion(int score) {
-    //totalScore += score;
+    totalScore += score;
 
-    print(totalScore);
     setState(() {
       questionIndex = questionIndex + 1;
     });
