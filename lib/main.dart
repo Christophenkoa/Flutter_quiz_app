@@ -48,7 +48,8 @@ class _MyAppState extends State<MyApp> {
   var totalScore = 0;
 
   void answerQuestion(int score) {
-    totalScore += totalScore;
+    //totalScore += score;
+
     print(totalScore);
     setState(() {
       questionIndex = questionIndex + 1;
